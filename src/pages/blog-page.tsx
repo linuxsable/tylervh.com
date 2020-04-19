@@ -1,6 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { blogEntries, BlogEntry } from "../blog-entries";
 
 export const BlogPage: React.FC = () => {
@@ -20,14 +20,30 @@ export const BlogPage: React.FC = () => {
     }
 
     const entry = blogEntries.find((entry) => entry.filename === parsedSlug);
-    const data = "hi";
 
     if (!entry) {
       return;
     }
 
-    setBlogEntry({ ...entry, fileContent: data });
+    setBlogEntry(entry);
   }, [slug]);
+
+  const Heading: React.FC<any> = (props) => {
+    const className = "pt3";
+
+    switch (props.level) {
+      case 1:
+        return <h2>{props.children}</h2>;
+      case 2:
+        return <h3 className={className}>{props.children}</h3>;
+      case 3:
+        return <h4 className={className}>{props.children}</h4>;
+      case 4:
+        return <h5 className={className}>{props.children}</h5>;
+      default:
+        return null;
+    }
+  };
 
   if (!blogEntry) {
     return <p>Not found.</p>;
@@ -35,7 +51,10 @@ export const BlogPage: React.FC = () => {
 
   return (
     <div className="measure-wide lh-copy">
-      <ReactMarkdown source={blogEntry.fileContent} />
+      <ReactMarkdown
+        source={blogEntry.fileContent}
+        renderers={{ heading: Heading }}
+      />
     </div>
   );
 };
