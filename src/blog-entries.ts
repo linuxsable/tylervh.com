@@ -2,6 +2,7 @@ import tempiDawSync from "./blog-entries/tempi-daw-sync.md";
 import millionsOfMiles from "./blog-entries/millions-of-miles.md";
 import introducingAvo from "./blog-entries/introducing-avo.md";
 import howToDriveADeveloperCrazy from "./blog-entries/how-to-drive-a-developer-crazy.md";
+import newTrackFirstBloom from "./blog-entries/new-track-first-bloom.md";
 
 export interface BlogEntry {
   title: string;
@@ -34,5 +35,11 @@ export const blogEntries: BlogEntry[] = [
     published: "2012-09-12T07:00:00.000Z",
     filename: "how-to-drive-a-developer-crazy",
     fileContent: howToDriveADeveloperCrazy,
+  },
+  {
+    title: "New Track: First Bloom",
+    published: "2020-04-19T07:00:00.000Z",
+    filename: "new-track-first-bloom",
+    fileContent: newTrackFirstBloom,
   },
 ];
