@@ -4,13 +4,17 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { IndexPage } from "./pages/index-page";
+import { BlogPage } from "./pages/blog-page";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/">
+        <Route path="/" exact={true}>
           <IndexPage />
+        </Route>
+        <Route path="/blog/:slug">
+          <BlogPage />
         </Route>
       </Switch>
     </Router>
