@@ -29,11 +29,11 @@ export const BlogPage: React.FC = () => {
   }, [slug]);
 
   const Heading: React.FC<any> = (props) => {
-    const className = "pt3";
+    const className = "pt3 fw4";
 
     switch (props.level) {
       case 1:
-        return <h2>{props.children}</h2>;
+        return <h2 className="fw4">{props.children}</h2>;
       case 2:
         return <h3 className={className}>{props.children}</h3>;
       case 3:
