@@ -51,6 +51,7 @@ export const BlogPage: React.FC = () => {
 
   return (
     <div className="measure-wide lh-copy">
+      <Link to="/" className="no-underline f4 dark-gray">⭠</Link>
       <ReactMarkdown
         source={blogEntry.fileContent}
         renderers={{ heading: Heading }}
