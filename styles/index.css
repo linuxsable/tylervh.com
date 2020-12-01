@@ -1,0 +1,23 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+@layer base {
+  @font-face {
+    font-family: Futura;
+    font-weight: 400;
+    src: url(/assets/fonts/futura.ttf);
+  }
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
