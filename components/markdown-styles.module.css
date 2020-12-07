@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base leading-relaxed;
+  @apply text-lg leading-relaxed;
 }
 
 .markdown p,
@@ -9,10 +9,19 @@
   @apply my-6;
 }
 
+.markdown ul {
+  list-style-type: disc;
+  @apply ml-4;
+}
+
 .markdown h2 {
   @apply text-2xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
   @apply text-lg mt-8 mb-4 leading-snug;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
 }

@@ -1,6 +1,4 @@
-import Avatar from "./avatar";
 import DateFormatter from "./date-formatter";
-import CoverImage from "./cover-image";
 import Link from "next/link";
 import Author from "../types/author";
 
@@ -13,17 +11,10 @@ type Props = {
   slug: string;
 };
 
-const PostPreview = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
+const PostPreview = ({ title, date, slug }: Props) => {
   return (
     <div>
-      <h3 className="leading-snug text-base">
+      <h3 className="leading-snug text-lg">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
