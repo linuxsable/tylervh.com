@@ -9,7 +9,7 @@ body {
 
 a {
   color: #457b9d;
-  text-decoration-style: wavy;
+  text-decoration-style: wavy !important;
   text-decoration: underline;
 }
 
