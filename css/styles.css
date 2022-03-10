@@ -64,11 +64,11 @@ section.two-panel {
 }
 
 section.two-panel section.left {
-  padding-right: 96px;
 }
 
 section.two-panel section.right {
   width: 704px;
+  padding-left: 96px;
 }
 
 nav {
