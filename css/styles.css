@@ -4,17 +4,17 @@ html {
 }
 
 body {
-  padding: 48px;
+  padding: 40px;
 }
 
 a {
   color: #457b9d;
-  text-decoration-style: wavy !important;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration-style: wavy !important;
+  text-decoration: underline;
 }
 
 h1,
