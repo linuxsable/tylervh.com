@@ -1,5 +1,5 @@
 ---
-title: On managing complexity
+title: On Managing Complexity
 date: 2023-08-17
 tags:
   - posts
