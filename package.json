@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "build": "sergey",
-    "dev": "sergey --watch"
-  },
-  "dependencies": {
-    "sergey": "^0.0.13"
-  }
-}
