@@ -114,7 +114,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
