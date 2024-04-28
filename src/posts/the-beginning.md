@@ -6,6 +6,6 @@ tags:
 layout: layouts/post.njk
 ---
 
-There’s nothing better than a blank canvas. Just you and an infite space to create.
+There’s nothing better than a blank canvas. Just you and an infinite space to create.
 
 Maybe in the beginning that’s all there was, just a blank canvas and some ideas.
