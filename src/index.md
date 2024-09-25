@@ -13,6 +13,6 @@ layout: layouts/home.njk
 
 #### 📱 Apps
 
-- [Meeting Waste](http://meetingwaste.xyz)
-- [Heron Derivation Dictionary](https://derivationdictionary.com)
 - [Avo Social](https://avo.social)
+- [Heron Derivation Dictionary](https://derivationdictionary.com)
+- [Meeting Waste](http://meetingwaste.xyz)
