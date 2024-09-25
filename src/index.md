@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 ---
 
-##### 🎹 Music
+#### 🎹 Music
 
 - [Adrift](https://atomstates.bandcamp.com/track/adrift)
 - [First Bloom](https://atomstates.bandcamp.com/track/first-bloom)
@@ -11,7 +11,7 @@ layout: layouts/home.njk
 - [Revenance EP](https://atomstates.bandcamp.com/album/revenance-ep)
 - [Esoteria EP](https://atomstates.bandcamp.com/album/esoteria-ep)
 
-##### 📱 Apps
+#### 📱 Apps
 
 - [Meeting Waste](http://meetingwaste.xyz)
 - [Heron Derivation Dictionary](https://derivationdictionary.com)
