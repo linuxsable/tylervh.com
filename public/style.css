@@ -12,7 +12,17 @@ body {
   color: #ddd;
   max-width: 768px;
   width: 100%;
-  margin: 50px 100px;
+  margin: 50px auto; /* Changed to auto for horizontal centering */
+  padding: 0 20px; /* Added padding */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    margin: 50px auto; /* Reduced top and bottom margin */
+    padding: 0 15px; /* Adjusted padding for mobile */
+  }
 }
 
 a, a:visited, a:hover, a:active {
