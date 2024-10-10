@@ -11,7 +11,6 @@ body {
   line-height: 1.5em;
   color: #ddd;
   max-width: 768px;
-  width: 100%;
   margin: 50px auto; /* Changed to auto for horizontal centering */
   padding: 0 20px; /* Added padding */
 }
