@@ -1,3 +1,7 @@
+# Tylers blog
+
+Netlify is used for auto deployment!!!
+
 # Hello Eleventy!
 
 This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator. That means you get all the power of a server-side framework but it builds plain HTML files for fast loading by your visitors. This project includes some default posts and layouts you can use as a foundation, and you can customize how your site builds in the JavaScript code. 📚
@@ -18,7 +22,7 @@ You'll get best use out of this project if you're familiar with basic HTML and J
 
 ← `.eleventy.js`: Here you can configure how Eleventy builds your content into the site. Read through the initial blog posts in the site for steps on extending this code.
 
-← `package.json`: Your project's dependencies, where you will also find the start command to run eleventy. 
+← `package.json`: Your project's dependencies, where you will also find the start command to run eleventy.
 
 ← `src/`: This folder contains all the files Eleventy will use to build your site.
 
@@ -32,13 +36,13 @@ You'll get best use out of this project if you're familiar with basic HTML and J
 
 ← `seo.json`: When you're ready to share your new site or add a custom domain, change SEO/meta settings in here.
 
-___Want a basic template version of this project to build your own Eleventy app? Check out [Minimal Eleventy](https://glitch.com/edit/#!/remix/11ty)!___
+**_Want a basic template version of this project to build your own Eleventy app? Check out [Minimal Eleventy](https://glitch.com/edit/#!/remix/11ty)!_**
 
 ## Try this next 🏗️
 
 With the site preview open on the right and the Glitch editor open on the left, navigate through the initial blog posts to learn more and carry out some development on your Eleventy site!
 
-Your site can use incremental builds, so if for example you only change a markdown file, Glitch would just rewrite the relevant page instead of rebuilding the whole site–to enable this, change your `package.json` `start` command to `eleventy --incremental --serve`. 
+Your site can use incremental builds, so if for example you only change a markdown file, Glitch would just rewrite the relevant page instead of rebuilding the whole site–to enable this, change your `package.json` `start` command to `eleventy --incremental --serve`.
 
 _When you add or delete a file and your preview does not update straight away on refresh, you can enter `eleventy --serve` in your project terminal to force a rewrite._
 
