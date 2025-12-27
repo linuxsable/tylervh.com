@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler Van Hoomissen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>{{content}}</main>
+    <nav>
+      <h2>Tyler Van Hoomissen</h2>
+
+      <h3>Musings</h3>
+      <ul>
+        {{posts}}
+      </ul>
+
+      <h3>Music</h3>
+      <ul>
+        <li>
+          <a href="https://atomstates.bandcamp.com/track/halfway">Halfway</a>
+        </li>
+        <li>
+          <a href="https://atomstates.bandcamp.com/track/adrift">Adrift</a>
+        </li>
+        <li>
+          <a href="https://atomstates.bandcamp.com/track/first-bloom"
+            >First Bloom</a
+          >
+        </li>
+        <li>
+          <a href="https://atomstates.bandcamp.com/album/lighter-spaces"
+            >Lighter Spaces</a
+          >
+        </li>
+        <li>
+          <a href="https://atomstates.bandcamp.com/album/inversion"
+            >Inversion</a
+          >
+        </li>
+        <li>
+          <a href="https://atomstates.bandcamp.com/album/revenance-ep"
+            >Revenance EP</a
+          >
+        </li>
+        <li>
+          <a href="https://atomstates.bandcamp.com/album/esoteria-ep"
+            >Esoteria EP</a
+          >
+        </li>
+      </ul>
+
+      <h3>Apps</h3>
+      <ul>
+        <li><a href="https://avo.social">Avo Social</a></li>
+        <li>
+          <a href="https://derivationdictionary.com"
+            >Heron Derivation Dictionary</a
+          >
+        </li>
+        <li><a href="http://meetingwaste.xyz">Meeting Waste</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle">
+        <span class="dot light"></span>
+        <span class="dot dark"></span>
+      </button>
+    </nav>
+
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+      }
+
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem(
+          "dark-mode",
+          document.body.classList.contains("dark-mode")
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<h1>Tempi DAW Sync</h1>
+<time>2020-02-10</time>
+
+<p>Below are my notes about how to sync up your modular system using a midi device and the Tempi (from Make Noise). I use the uMidi device from Intellijel, but this can be adapted to other midi modules.</p>
+
+<h4>The Patch</h4>
+
+<p>Let's setup the Tempi to receive both our clock input and our start/stop input from the DAW. This ensures the patch will start & stop with the DAW transport.</p>
+
+<ol>
+  <li>
+    <strong>uMidi > Clock 1/32 OUT > Tempi > Tempo IN</strong><br />
+    This sets up the tempo correctly for Tempi. Using 32nd notes is important: it ensures a high resolution is sent to the Tempi so that it can establish the correct tempo quickly, thus staying in time with your song. If the clock division is too low, like 1/8th, the Tempi would fail to sync fast enough with the DAW.
+  </li>
+  <li>
+    <strong>uMidi > Run OUT > Tempi > Mod IN</strong><br />
+    This sets up the playhead of the DAW to turn on & off with Tempi. This is important when using sequencers with your modular system: when you hit record, you want your sequence to start playing in order to record it properly in time.
+  </li>
+</ol>
+
+<h4>Tempi Program Edit</h4>
+
+<p>This setup ensures that the Tempi will start/stop with the DAW.</p>
+
+<ol>
+  <li>Button 5 = <strong>Blue</strong></li>
+  <li>Button 6 = <strong>Red</strong></li>
+</ol>
+
+<p>Happy patching!</p>
