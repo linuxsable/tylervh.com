@@ -5,7 +5,7 @@
   --hover-bg: #eee;
 }
 
-body.dark-mode {
+:root.dark-mode {
   --bg-color: #1a1a1a;
   --text-color: #999;
   --heading-color: #eee;
@@ -32,6 +32,8 @@ body {
 
 main {
   max-width: 800px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 h1 {
@@ -155,11 +157,11 @@ nav a:hover {
   background-color: transparent;
 }
 
-body.dark-mode .theme-toggle .dot.light {
+:root.dark-mode .theme-toggle .dot.light {
   background-color: transparent;
 }
 
-body.dark-mode .theme-toggle .dot.dark {
+:root.dark-mode .theme-toggle .dot.dark {
   background-color: var(--text-color);
 }
 

@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Tyler Van Hoomissen</title>
+    <script>
+      (() => {
+        try {
+          if (localStorage.getItem("dark-mode") === "true") {
+            document.documentElement.classList.add("dark-mode");
+          }
+        } catch (_error) {}
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,17 +86,11 @@
 
     <script>
       const toggle = document.getElementById("theme-toggle");
-
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-      }
+      const root = document.documentElement;
 
       toggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        localStorage.setItem(
-          "dark-mode",
-          document.body.classList.contains("dark-mode")
-        );
+        root.classList.toggle("dark-mode");
+        localStorage.setItem("dark-mode", root.classList.contains("dark-mode"));
       });
     </script>
   </body>
